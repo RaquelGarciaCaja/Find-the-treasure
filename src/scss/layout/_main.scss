@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.pageTitle {
+  display: flex;
+  align-items: center;
+}
+.page {
+  background-image: url(../images/pirates.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  &__title {
+    font-size: 30px;
+    font-family: "Pirata One", cursive;
+    padding: 10px;
+    text-transform: uppercase;
+  }
+
+  &__title--img {
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  &__img--img {
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+  }
+  &__img {
+    border-bottom: 2px solid black;
+  }
+
+  &__distance {
+    font-family: "Pirata One", cursive;
+  }
+  &__treasure {
+    height: 50px;
+    width: 50px;
+  }
+}
