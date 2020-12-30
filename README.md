@@ -43,5 +43,6 @@ src
 
 ```
 
-### ARGHHHHH ⭐️
+### Arggggghhhh ☠️
+
 <img src="https://media.giphy.com/media/lMg0qBGvh0Hu0AMLj4/giphy.gif">
