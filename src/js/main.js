@@ -6,9 +6,6 @@ const width = 400;
 const clickMap = document.querySelector(".js-map");
 const textWhereIsTheTreasure = document.querySelector(".page__distance");
 let click = 0;
-const resultWin = document.querySelector(".js-win");
-const resultLose = document.querySelector(".js-lose");
-const closeBtn = document.querySelector(".js-close");
 
 // get random coordinates
 function getRandomNumber(size) {
@@ -59,11 +56,7 @@ const clickOnTheMap = (e) => {
   }
 };
 
-function close() {
-  resultWin.style.display = "none";
-}
 // listeners
 clickMap.addEventListener("click", clickOnTheMap);
-closeBtn.addEventListener("click", close);
 
 //# sourceMappingURL=main.js.map
