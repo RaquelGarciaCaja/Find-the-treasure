@@ -6,6 +6,9 @@ const width = 400;
 const clickMap = document.querySelector(".js-map");
 const textWhereIsTheTreasure = document.querySelector(".page__distance");
 let click = 0;
+const resultWin = document.querySelector(".js-win");
+const resultLose = document.querySelector(".js-lose");
+const closeBtn = document.querySelector(".js-close");
 
 // get random coordinates
 function getRandomNumber(size) {
@@ -50,12 +53,17 @@ const clickOnTheMap = (e) => {
   let distancePx = getDistancePx(distance);
   textWhereIsTheTreasure.innerHTML = `<h2>${distancePx}</h2>`;
   if (distance < 20) {
+    // resultWin.style.display = "flex";
     alert(`Has encontrado el tesoro en ${click} intentos`);
     location.reload();
   }
 };
 
+function close() {
+  resultWin.style.display = "none";
+}
 // listeners
 clickMap.addEventListener("click", clickOnTheMap);
+closeBtn.addEventListener("click", close);
 
 //# sourceMappingURL=main.js.map

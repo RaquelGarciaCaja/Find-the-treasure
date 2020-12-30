@@ -6,6 +6,7 @@
 .pageTitle {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .page {
   background-image: url(../images/pirates.jpg);
@@ -19,10 +20,13 @@
   height: 100vh;
 
   &__title {
+    font-size: 40px;
+    font-family: "Pirata One", cursive;
+    text-transform: uppercase;
+  }
+  &__subtitle {
     font-size: 30px;
     font-family: "Pirata One", cursive;
-    padding: 10px;
-    text-transform: uppercase;
   }
 
   &__title--img {
@@ -50,5 +54,46 @@
   &__treasure {
     height: 50px;
     width: 50px;
+  }
+  &__resultWin {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 50px;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__winGif {
+    height: 250px;
+    width: 250px;
+  }
+
+  &__win {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "Source Code Pro", monospace;
+    z-index: 999;
+    color: white;
+  }
+
+  &__close {
+    color: white;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
   }
 }
